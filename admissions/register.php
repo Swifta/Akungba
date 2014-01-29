@@ -34,11 +34,16 @@
                                                         <label class="bolds">Select Payment Method</label>
                                                     </td>
                                                     <td>
-                                                        <select style="width: 350px;">
+                                                        <select style="width: 350px;" id="selectpay">
                                                             <option>select payment option</option>
                                                             <option value="1">Online Payment with Interswitch & ETranzact</option>
                                                             <option value="2">Bank Payment</option>
                                                         </select>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2">
+                                                        <div id="payview"></div>
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -65,5 +70,18 @@
         <?php
         include '../assets/templates/js.php';
         ?>
+        <script type="text/javascript">
+            $(function(){
+                $("#selectpay").bind("change",function(){
+                    var payOption = $(this).val();
+                    if(payOption == 1){
+                        window.open("https://webpay.interswitchng.com/webpay/purchase.aspx?CADPID=CADP628051&MERTID=Demo&TXNREF=114021390894928528&AMT=4500000&TRANTYPE=00&applet=false");
+                    }
+                    if(payOption == 2){
+                        $("#payview").load("http://localhost/akungba/admissions/bank.php");
+                    }
+                });
+            });
+        </script>
     </body>
 </html>

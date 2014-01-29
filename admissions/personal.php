@@ -33,53 +33,102 @@
                                                     <h4>Personal <span class="semi-bold">Information</span></h4>
                                                 </div>
                                                 <div class="grid-body no-border">
+                                                    <br />
                                                     <form class="form-no-horizontal-spacing" id="form-condensed" novalidate="novalidate">
                                                         <div class="row column-seperation">
                                                             <div class="col-md-6">
                                                                 <h4 class="thirteens bolds">Basic Information</h4>
                                                                 <div class="row form-row">
                                                                     <div class="col-md-4">
-                                                                        <input class="form-control" name="firstname" placeholder="First Name"/>
+                                                                        <input class="form-control" name="firstname" placeholder="First Name" required="true"/>
                                                                     </div>
                                                                     <div class="col-md-4">
-                                                                        <input class="form-control" name="middlename" placeholder="Middle Name"/>
+                                                                        <input class="form-control" name="middlename" placeholder="Middle Name" required="true"/>
                                                                     </div>                                                                    
                                                                     <div class="col-md-4">
-                                                                        <input class="form-control" name="lastname" placeholder="Last Name"/>
+                                                                        <input class="form-control" name="lastname" placeholder="Last Name" required="true"/>
                                                                     </div>                                                                                                                                        
                                                                 </div>
                                                                 <div class="row form-row">
                                                                     <div class="col-md-4">
-                                                                        <input class="form-control" name="appnumber" placeholder="Date of Birth" type="date"/>
+                                                                        <input class="form-control" name="appnumber" placeholder="Date of Birth" type="date" required="true"/>
                                                                     </div>
                                                                     <div class="col-md-4">
-                                                                        <select class="form-control">
+                                                                        <select class="form-control" required="true">
                                                                             <option>Gender</option>
                                                                         </select>
                                                                     </div>                                                                    
                                                                     <div class="col-md-4">
-                                                                        <select class="form-control">
+                                                                        <select class="form-control" required="true">
                                                                             <option>Marital Status</option>
                                                                         </select>
                                                                     </div>                                                                                                                                        
                                                                 </div>
                                                                 <h4 class="thirteens bolds">Contact Information</h4>
                                                                 <div class="row form-row">
-                                                                    <textarea class="form-control padded" placeholder="Mailing Address" style="resize: none"></textarea>
+                                                                    <textarea class="form-control padded" placeholder="Mailing Address" style="resize: none" required="true"></textarea>
                                                                 </div>
                                                                 <div class="row form-row">
                                                                     <div class="col-md-5">
-                                                                        <select class="form-control">
+                                                                        <select class="form-control" required="true">
                                                                             <option>Country</option>
                                                                         </select>                                                                        
                                                                     </div>
-                                                                    <div class="col-md-5"></div>
+                                                                    <div class="col-md-5">
+                                                                        <select class="form-control" required="true">
+                                                                            <option>State of Origin</option>
+                                                                        </select>                                                                                                                                                
+                                                                    </div>
+                                                                    <div class="col-md-5">
+                                                                        <select class="form-control" required="true">
+                                                                            <option>Local Government Area</option>
+                                                                        </select>                                                                                                                                                
+                                                                    </div>                                                                    
                                                                 </div>                                                                                                                                
                                                                 <div class="row form-row">
                                                                     
                                                                 </div>                                                                
                                                             </div>
-                                                            <div class="col-md-6"></div>
+                                                            <div class="col-md-6">
+                                                                <h4 class="thirteens bolds">Academic Information</h4>
+                                                                <div class="row form-row">
+                                                                    <div class="col-md-4">
+                                                                        <select class="form-control" required="true">
+                                                                            <option>Choice of AAU</option>
+                                                                        </select>                                                                                                                                                                                                                        
+                                                                    </div>
+                                                                    <div class="col-md-4">
+                                                                        <select class="form-control" required="true">
+                                                                            <option>Selected Program(First choice)</option>
+                                                                        </select>                                                                                                                                                                                                                        
+                                                                    </div>                                                                    
+                                                                    <div class="col-md-4">
+                                                                        <select class="form-control" required="true">
+                                                                            <option>Selected Program(Second choice)</option>
+                                                                        </select>                                                                                                                                                                                                                        
+                                                                    </div>                                                                                                                                        
+                                                                </div>
+                                                                <div class="padded">
+                                                                    <div class="row form-row">
+                                                                        <div class="col-md-12">
+                                                                            <input type="checkbox"/>  DE Candidate (Select if you are direct entry candidate)
+                                                                        </div>
+                                                                        <div class="col-md-12">
+                                                                            Upload your recent passport <input type="file" class="form-control" required="true"/>
+                                                                        </div>                                                                        
+                                                                    </div>
+                                                                    <div class="row form-row">
+                                                                        <div class="col-md-12">
+                                                                            <input type="text" class="form-control" autocomplete="false" placeholder="Application Number"/>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row form-row">
+                                                                        <div class="col-md-12">
+                                                                            <input type="submit" class="form-control btn btn-default" value="Save and Continue"/>
+                                                                        </div>
+                                                                    </div>                                                                    
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </form>
                                                 </div>
