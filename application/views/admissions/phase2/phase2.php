@@ -1,18 +1,16 @@
 <html>
     <?php
-    include '../assets/header/head-core.php';
+    echo $header;
     ?>    
     <body class="error-body no-top lazy"  style="display: block;"> 
         <?php
-        include '../assets/templates/nav.php';
+        echo $nav;
         ?>        
         <div class="page-container row">
-            <?php
-            include '../assets/templates/utme-sidebar.php';
-            ?> <div class="page-content" style="top : 9%;position: relative">
+            <div class="page-content" style="top : 9%;position: relative">
                 <div class="">
                     <div class="canvas padding-20">
-                         <h2 class="normal headers">UTME Admission</h2>
+                        <h2 class="normal headers">UTME Admission</h2>
                         <div class="grid simple transparent">
                             <div class="grid-body ">
                                 <div class="row">
@@ -57,10 +55,10 @@
 
         </div>
         <?php
-        include '../assets/templates/bottom.php';
+        echo $bottom;
         ?>
         <?php
-        include '../assets/templates/page-js.php';
+        echo $js;
         ?>            
         <script src="../assets2/plugins/boostrap-form-wizard/js/jquery.bootstrap.wizard.min.js" type="text/javascript"></script>
 

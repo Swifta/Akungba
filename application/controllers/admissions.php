@@ -18,6 +18,7 @@ class admissions extends CI_Controller {
         $this->data = array();
         $this->data["base"] = $this->config->item("base");
         $this->data["assets"] = $this->config->item("assets");
+        $this->data["defaultassets"] = $this->config->item("defaultassets");
     }
 
     function index() {
@@ -105,6 +106,18 @@ class admissions extends CI_Controller {
             
         } else {
             $this->load->view("admissions/utme/register.php", $this->data);
+        }
+    }
+    function continueAdmission() {
+        $this->data["header"] = $this->load->view("header/head-core.php", $this->data, true);
+        $this->data["nav"] = $this->load->view("templates/nav.php", $this->data, true);
+        $this->data["bottom"] = $this->load->view("templates/bottom.php", $this->data, true);
+        $this->data["js"] = $this->load->view("templates/page-js.php", $this->data, true);
+
+        if (count($_POST) > 0) {
+            
+        } else {
+            $this->load->view("admissions/phase2/phase2.php", $this->data);
         }
     }
 

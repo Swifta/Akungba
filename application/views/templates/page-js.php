@@ -1,0 +1,33 @@
+<script src="<?php echo $defaultassets; ?>/plugins/jquery-1.8.3.min.js" type="text/javascript"></script>
+<script src="<?php echo $defaultassets; ?>/plugins/jquery-ui/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
+<script src="<?php echo $defaultassets; ?>/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="<?php echo $defaultassets; ?>/plugins/breakpoints.js" type="text/javascript"></script>
+<script src="<?php echo $defaultassets; ?>/plugins/jquery-unveil/jquery.unveil.min.js" type="text/javascript"></script>
+<!-- END CORE JS FRAMEWORK -->
+<!-- BEGIN PAGE LEVEL JS -->
+<script src="<?php echo $defaultassets; ?>/plugins/jquery-slider/jquery.sidr.min.js" type="text/javascript"></script>
+<script src="<?php echo $defaultassets; ?>/plugins/jquery-block-ui/jqueryblockui.js" type="text/javascript"></script> 
+<script src="<?php echo $defaultassets; ?>/plugins/jquery-numberAnimate/jquery.animateNumbers.js" type="text/javascript"></script>
+<script src="<?php echo $defaultassets; ?>/plugins/pace/pace.min.js" type="text/javascript"></script>
+<script src="<?php echo $defaultassets; ?>/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js" type="text/javascript"></script>
+<script src="<?php echo $defaultassets; ?>/plugins/bootstrap-select2/select2.min.js" type="text/javascript"></script>
+<script src="<?php echo $defaultassets; ?>/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+<script src="<?php echo $defaultassets; ?>/plugins/boostrap-form-wizard/js/jquery.bootstrap.wizard.min.js" type="text/javascript"></script>
+<script src="<?php echo $defaultassets; ?>/plugins/jquery-validation/js/jquery.validate.min.js" type="text/javascript"></script>
+<script src="<?php echo $defaultassets; ?>/plugins/bootstrap-wysihtml5/wysihtml5-0.3.0.js" type="text/javascript"></script>
+<script src="<?php echo $defaultassets; ?>/plugins/bootstrap-wysihtml5/bootstrap-wysihtml5.js" type="text/javascript"></script>
+<script src="<?php echo $defaultassets; ?>/plugins/bootstrap-tag/bootstrap-tagsinput.min.js" type="text/javascript"></script>
+<script src="<?php echo $defaultassets; ?>/plugins/dropzone/dropzone.min.js" type="text/javascript"></script>
+<script src="<?php echo $defaultassets; ?>/plugins/jquery-inputmask/jquery.inputmask.min.js" type="text/javascript"></script>
+<script src="<?php echo $defaultassets; ?>/plugins/jquery-autonumeric/autoNumeric.js" type="text/javascript"></script>
+
+<!-- BEGIN PAGE LEVEL JS --> 	
+<script src="<?php echo $defaultassets; ?>/plugins/jquery-sparkline/jquery-sparkline.js"></script>
+<script src="<?php echo $defaultassets; ?>/plugins/jquery-numberAnimate/jquery.animateNumbers.js" type="text/javascript"></script> 
+<!-- END PAGE LEVEL PLUGINS -->
+<script src="<?php echo $defaultassets; ?>/js/form_validations.js" type="text/javascript"></script>
+<!-- BEGIN CORE TEMPLATE JS -->
+<script src="<?php echo $defaultassets; ?>/js/tabs_accordian.js" type="text/javascript"></script>
+<script src="<?php echo $defaultassets; ?>/js/core.js" type="text/javascript"></script>
+<script src="<?php echo $defaultassets; ?>/js/demo.js" type="text/javascript"></script>
+<script src="<?php echo $defaultassets; ?>/js/phase2.js" type="text/javascript"></script>

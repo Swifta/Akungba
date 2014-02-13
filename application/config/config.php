@@ -23,7 +23,7 @@ $config['js']	= "http://$server_name/eportal/js";
 $config['img']	= "http://$server_name/eportal/img";
 $config['css']	= "http://$server_name/eportal/css";
 $config['assets'] = "http://$server_name/eportal/assets";
-
+$config['defaultassets'] = "http://$server_name/eportal/assets2";
 $config["api"] = "http://localhost:8080/";
 /*
 |--------------------------------------------------------------------------
