@@ -57,7 +57,7 @@ class admissions extends CI_Controller {
             }
             rtrim($fields_string);
 
-            $url = ("http://127.0.0.1:8081/dss/1.0/clients");
+            $url = "http://127.0.0.1:8081/dss/1.0/clients";
 
 
             $ch = curl_init();
@@ -101,11 +101,35 @@ class admissions extends CI_Controller {
         $this->data["bottom"] = $this->load->view("templates/bottom.php", $this->data, true);
         $this->data["js"] = $this->load->view("templates/js.php", $this->data, true);
 
-        if (count($_POST) > 0) {
-            
-        } else {
-            $this->load->view("admissions/utme/register.php", $this->data);
+        $url = "http://192.168.1.21:9765/services/schoolDBasService/states/156";
+
+        $ch = curl_init();
+        
+        curl_setopt($ch, CURLOPT_HEADER, 0);
+        curl_setopt($ch, CURLOPT_HTTPHEADER, array("Accept:application/json"));
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1); //Set curl to return the data instead of printing it to the browser.
+        curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 10); # timeout after 10 seconds, you can increase it
+        curl_setopt($ch, CURLOPT_URL, $url); #set the url and get string together
+
+        $response = curl_exec($ch);
+        
+        $states = json_decode($response);
+        
+        $state = $states->States;
+        
+        $state_list = $state->State;
+        
+        $state_data = array();
+        
+        foreach($state_list as $key => $values){
+            $state_data[$values->locationId] = $values->Name;
         }
+        
+        $this->data["states"] = $state_data;
+        curl_close($ch);
+
+
+        $this->load->view("admissions/utme/register.php", $this->data);
     }
 
 }

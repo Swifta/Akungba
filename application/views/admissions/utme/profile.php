@@ -64,7 +64,7 @@
                                             </div>
                                             <div class="grid-body no-border">
                                                 <br />
-                                                <form class="form-no-horizontal-spacing" id="form-condensed" novalidate="novalidate" action="<?php echo $base;?>/index.php/admissions/profile" method="post">
+                                                <form class="form-no-horizontal-spacing" id="form-condensed" novalidate="novalidate" action="register.php" method="post">
                                                     <div class="row column-seperation">
                                                         <div class="col-md-6">
                                                             <h4 class="thirteens bolds">Basic Information</h4>
@@ -101,17 +101,12 @@
                                                             <div class="row form-row">
                                                                 <div class="col-md-5">
                                                                     <select class="form-control" required="true">
-                                                                        <option value="">Nigeria</option>
+                                                                        <option>Country</option>
                                                                     </select>                                                                        
                                                                 </div>
                                                                 <div class="col-md-5">
                                                                     <select class="form-control" required="true">
                                                                         <option>State of Origin</option>
-                                                                        <?php 
-                                                                            foreach($states as $key => $values){
-                                                                                echo("<option value = ''>$values</option>");
-                                                                            }
-                                                                        ?>
                                                                     </select>                                                                                                                                                
                                                                 </div>
                                                                 <div class="col-md-5">
