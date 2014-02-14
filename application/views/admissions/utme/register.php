@@ -64,7 +64,7 @@
                                             </div>
                                             <div class="grid-body no-border">
                                                 <br />
-                                                <form class="form-no-horizontal-spacing" id="form-condensed" novalidate="novalidate" action="<?php echo $base;?>/index.php/admissions/profile" method="post">
+                                                <form class="form-no-horizontal-spacing" id="form-condensed" novalidate="novalidate" action="<?php echo $base; ?>/index.php/admissions/profile" method="post">
                                                     <div class="row column-seperation">
                                                         <div class="col-md-6">
                                                             <h4 class="thirteens bolds">Basic Information</h4>
@@ -86,11 +86,15 @@
                                                                 <div class="col-md-4">
                                                                     <select class="form-control" required="true">
                                                                         <option>Gender</option>
+                                                                        <option value="Male">Male</option>
+                                                                        <option value="Female">Female</option>
                                                                     </select>
                                                                 </div>                                                                    
                                                                 <div class="col-md-4">
                                                                     <select class="form-control" required="true">
                                                                         <option>Marital Status</option>
+                                                                        <option value="Single">Single</option>
+                                                                        <option value="Married">Married</option>                                                                        
                                                                     </select>
                                                                 </div>                                                                                                                                        
                                                             </div>
@@ -105,17 +109,17 @@
                                                                     </select>                                                                        
                                                                 </div>
                                                                 <div class="col-md-5">
-                                                                    <select class="form-control" required="true">
+                                                                    <select class="form-control" required="true" id="states">
                                                                         <option>State of Origin</option>
-                                                                        <?php 
-                                                                            foreach($states as $key => $values){
-                                                                                echo("<option value = ''>$values</option>");
-                                                                            }
+                                                                        <?php
+                                                                        foreach ($states as $key => $values) {
+                                                                            echo("<option value = '$key'>$values</option>");
+                                                                        }
                                                                         ?>
                                                                     </select>                                                                                                                                                
                                                                 </div>
                                                                 <div class="col-md-5">
-                                                                    <select class="form-control" required="true">
+                                                                    <select class="form-control" required="true" id="lgas">
                                                                         <option>Local Government Area</option>
                                                                     </select>                                                                                                                                                
                                                                 </div>                                                                    
@@ -129,17 +133,30 @@
                                                             <div class="row form-row">
                                                                 <div class="col-md-4">
                                                                     <select class="form-control" required="true">
-                                                                        <option>Choice of AAU</option>
+                                                                        <option value="">Choice of AAU</option>
+                                                                        <option value="1">First Choice</option>
+                                                                        <option value="2">Second Choice</option>
+                                                                        <option value="3">First and Second Choice</option>
                                                                     </select>                                                                                                                                                                                                                        
                                                                 </div>
                                                                 <div class="col-md-4">
                                                                     <select class="form-control" required="true">
                                                                         <option>Selected Program(First choice)</option>
+                                                                        <?php
+                                                                        foreach ($programs as $key => $values) {
+                                                                            echo("<option value = '$key'>$values</option>");
+                                                                        }
+                                                                        ?>
                                                                     </select>                                                                                                                                                                                                                        
                                                                 </div>                                                                    
                                                                 <div class="col-md-4">
                                                                     <select class="form-control" required="true">
                                                                         <option>Selected Program(Second choice)</option>
+                                                                        <?php
+                                                                        foreach ($programs as $key => $values) {
+                                                                            echo("<option value = '$key'>$values</option>");
+                                                                        }
+                                                                        ?>                                                                        
                                                                     </select>                                                                                                                                                                                                                        
                                                                 </div>                                                                                                                                        
                                                             </div>

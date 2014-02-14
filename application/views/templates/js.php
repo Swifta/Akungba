@@ -5,5 +5,6 @@
 <script src="<?php echo $assets;?>/plugins/jquery-validation/js/jquery.validate.min.js" type="text/javascript"></script>
 <script src="<?php echo $assets;?>/plugins/jquery-lazyload/jquery.lazyload.min.js" type="text/javascript"></script>
 <script src="<?php echo $assets;?>/js/login.js" type="text/javascript"></script>
+<script src="<?php echo $assets;?>/js/ajax.js" type="text/javascript"></script>
 <!-- BEGIN CORE TEMPLATE JS -->
 <!-- END CORE TEMPLATE JS -->
