@@ -1,8 +1,8 @@
-$(document).ready(function()
+/*$(document).ready(function()
 {
     alert("started....");
     var locationId = 156;
-    $.ajax({/* post the values using AJAX */
+    $.ajax({/* post the values using AJAX 
         type: "GET",
         url: "http://192.168.1.10:9765/services/schoolDBasService/states/" + locationId,
        dataType: "json",
@@ -19,4 +19,4 @@ $(document).ready(function()
         }
     });
 
-});
+});*/

@@ -90,6 +90,33 @@
                                                 </div>
                                             </td>
                                         </tr>
+                                        <?php
+                                        $json_result = json_decode($result);
+                                        foreach ($json_result as $columnName => $columnData) {
+                                            $name = $columnData['name'];
+                                            $id = $columnData['id'];
+                                            ?>
+                                            <tr>
+                                                <td>
+                                                    <div class="checkbox check-default">
+                                                        <input id="checkbox14" type="checkbox" value="1">
+                                                        <label for="checkbox14"></label>
+                                                    </div>
+                                                </td>
+                                                <td><?php echo $name ?></td>
+                                                <td valign="middle"><span class="muted">This entails calculations based on some scientific findings in the space. This is crucial especially for sciences</span>
+                                                </td>
+                                                <td><span class="muted"><?php echo $id ?></span>
+                                                </td>
+                                                <td>
+                                                    <div class="progress progress-warning">
+                                                        <div data-percentage="<?php echo $id ?>%" class="bar animate-progress-bar"></div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <?php
+                                        }
+                                        ?>
                                         <tr>
                                             <td>
                                                 <div class="checkbox check-default">

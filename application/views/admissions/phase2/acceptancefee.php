@@ -10,22 +10,22 @@
             If you have used the PIN previously on this section, please click here to go to the admission page.</span>
     </div>                   
     <br />
-    <div class="row form-row">
+    <div class="row form-row payment-info">
         <b class="padded">
             Select Payment Options
         </b>
         <br />                                                     
         <div class="col-md-5">
             <input type="radio" name="payment"/>      eTranzact PIN Payments
-            <img src="../assets/img/etz.jpg" style="width: 200px;height: 50px;"/>
+            <img src="<?php echo $assets; ?>/img/etz.jpg" style="width: 200px;height: 50px;"/>
         </div>
         <div class="col-md-5">
             <input type="radio" name="payment"/>      Interswitch Payment
-            <img src="../assets/img/isw.gif" style="width: 200px;height: 50px;"/>                                                            
+            <img src="<?php echo $assets; ?>/img/isw.gif" style="width: 200px;height: 50px;"/>                                                            
         </div>                                                        
     </div>
     <br />
-    <div class="row form-row padded">
+    <div class="row form-row payment-info">
         <div class="col-md-5">
             <input class="form-control" placeholder="Receipt Number" required="true"/>
         </div>

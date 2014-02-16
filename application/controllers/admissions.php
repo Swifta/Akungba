@@ -117,8 +117,22 @@ class admissions extends CI_Controller {
         if (count($_POST) > 0) {
             
         } else {
+            $this->data["result"] = $this->retrieveApplicantResult();
             $this->load->view("admissions/phase2/phase2.php", $this->data);
         }
+    }
+    function retrieveApplicantResult(){
+        $url = ("http://127.0.0.1:8081/services/schoolDBasService/academicProgramme/");
+
+
+            $ch = curl_init();
+
+            curl_setopt($ch, CURLOPT_URL, $url);
+            curl_setopt($ch, CURLOPT_HTTPHEADER, array("Accept:application/json"));
+            curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+
+            $result = curl_exec($ch);
+            return $result;
     }
 
 }
